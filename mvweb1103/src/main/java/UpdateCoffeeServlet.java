@@ -53,10 +53,10 @@ public class UpdateCoffeeServlet extends HttpServlet {
 	                updateCoffeeSales(coffee,sale,total);
 	            } catch (SQLException ex) {
 	                System.out.println(ex.getMessage());
-	                out.println("修改失敗");
+	                out.println("修改失敗!");
 	                return;
 	            }
-	            out.println("修改完成");
+	            out.println("修改完成!");
 	            out.println("</body>");
 	            out.println("</html>");
 	        } finally {            
